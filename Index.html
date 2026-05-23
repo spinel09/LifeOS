@@ -17,9 +17,26 @@
                     <p>Salaire travail  : 450€</p>
 
                     <input type="number" id="moneyInput" placeholder="Ajouter argent">
-                    <button onclick="addmoney ()"> Ajouter</button>
+                    <button onclick="addMoney ()"> Ajouter</button>
 
                     <h3 id="moneyDisplay">0€</h3>
+
+                    <h3 id="xpDisplay">XP : 0</h3>
+                    <h3 id="levelDisplay">Niveau 1</h3>
+
+
+                    <div class="xpBar">
+                        <div class="xpFill" id="xpFill"></div>
+                    </div>
+
+                    <h3> 🌴voyage</h3>
+                    <p id="travelText"> 0€  /  3000€</p>
+
+                    <div class="travelBar">
+                         <div class="travelFill" id="travelFill"></div>
+                    </div>
+
+
                 </div>
 
                 <div class="card">
@@ -27,13 +44,26 @@
                     <p> Permis</p>
                     <p> voyage</p>
                     <p>crée un jeu</p>
+
+                    <input type="text" id="taskInput" placeholder="Nouvelle tache">
+
+                    <button onclick="addTask()">Ajouter tache</button>
+                    
+                    <div id="taskList"></div>
                 </div>
 
                 <div class="card">
                     <h2>💻 Développement</h2>
                     <p> Unity : Débutant</p>
                     <p> Projet actuel : LifeOS</p>
+
+                    <h3>📊 Statistiques </h3>
+                    <p id="statsMoney">Argent gagné : 0€</p>
+                    <p id="statsTasks">Taches Terminées : 0</p>
+                    <p id="statsLevel">Niveau acutel : 1</p>
                 </div>
+
+                
           </div>
 
           <script src="script.js"></script>
